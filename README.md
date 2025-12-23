@@ -13,7 +13,7 @@ This mode uses the local Socket.IO server at http://localhost:3000 for real-time
 To connect directly to FlytBase staging for a quick demo (bypassing local backend):
 
 Edit context/DroneContext.jsx and update the socket URL:JavaScriptconst socket = io("wss://api-stag.flytbase.com", { ... });
-In your global .env file (or .env.local), set the demo device ID:envVITE_FLYTBASE_DEVICE_ID=67c57340d4f4b385819aa2c4
+In your global .env file (or .env.local), set the demo device ID:env VITE_FLYTBASE_DEVICE_ID=67c57340d4f4b385819aa2c4
 Restart the frontend:Bashnpm run dev
 
 This will display simulated/live demo telemetry from FlytBase staging.
